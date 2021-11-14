@@ -2,6 +2,9 @@ __author__ = "Jason Oesch"
 __version__ = "0.1.0"
 __license__ = "MIT"
 
+from datetime import datetime
+
+
 def findDiv(num):
 
     x = 1
@@ -25,16 +28,18 @@ def main():
     Check = 0
     End = 100000
     reslist = []
+    start = datetime.now()
     while Check <= End:
         divs = findDiv(Check)
         test = sumdiv(divs)
         if test == Check:
             reslist.append(Check)
         Check += 1
+    end = datetime.now()
     print(reslist)
-    # test = findDiv(496)
-    # print(test)
-    # print(sumdiv(test))
+    print (end -start)
+
+
 
 
 
