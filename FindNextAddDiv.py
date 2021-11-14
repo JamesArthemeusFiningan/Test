@@ -1,8 +1,4 @@
-"""
-Module Docstring
-"""
-
-__author__ = "Your Name"
+__author__ = "Jason Oesch"
 __version__ = "0.1.0"
 __license__ = "MIT"
 
@@ -26,7 +22,6 @@ def sumdiv (divlist):
     return total
 
 def main():
-    """ Main entry point of the app """
     Check = 0
     End = 100000
     reslist = []
@@ -44,5 +39,4 @@ def main():
 
 
 if __name__ == "__main__":
-    """ This is executed when run from the command line """
     main()
