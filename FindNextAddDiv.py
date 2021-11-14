@@ -26,7 +26,7 @@ def sumdiv (divlist):
 
 def main():
     Check = 0
-    End = 100000
+    End = 1000000
     reslist = []
     start = datetime.now()
     while Check <= End:
@@ -35,6 +35,10 @@ def main():
         if test == Check:
             reslist.append(Check)
         Check += 1
+        if Check % (End/100) == 0:
+            print(f'{(Check/End)*100} %')
+            end2 = datetime.now()
+            print(end2 - start)
     end = datetime.now()
     print(reslist)
     print (end -start)
