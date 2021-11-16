@@ -6,15 +6,17 @@ from datetime import datetime
 
 def main():
     start = 1
-    end = 100
+    end = 500
+    reslst=[]
     stime=datetime.now()
     for start in range(end):
         i = 1
         for i in range(end):
-            print(start**i)
+            reslst.append(start**i)
             i+=1
         start+=1
     etime=datetime.now()
+    print(reslst)
     print(etime-stime)
 
 if __name__ == "__main__":
