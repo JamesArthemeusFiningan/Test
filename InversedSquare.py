@@ -6,7 +6,7 @@ from datetime import datetime
 
 def main():
     start = 1
-    end = 1000
+    end = 100
     reslst = []
     stime = datetime.now()
     for start in range(end):
@@ -21,7 +21,6 @@ def main():
     etime = datetime.now()
     print(reslst)
     print(etime - stime)
-
 
 
 if __name__ == "__main__":
